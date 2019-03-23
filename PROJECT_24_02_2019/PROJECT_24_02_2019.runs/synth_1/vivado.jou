@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 22 16:58:17 2019
+# Process ID: 14911
+# Current directory: /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.runs/synth_1
+# Command line: vivado -log Top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_module.tcl
+# Log file: /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.runs/synth_1/Top_module.vds
+# Journal file: /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Top_module.tcl -notrace

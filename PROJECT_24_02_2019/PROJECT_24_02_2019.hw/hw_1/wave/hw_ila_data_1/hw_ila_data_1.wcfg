@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Carlos/Desktop/proyecto sd/PROJECT_24_02_2019/PROJECT_24_02_2019.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="99123fs"></ZoomStartTime>
+      <ZoomEndTime time="161324fs"></ZoomEndTime>
+      <Cursor1Time time="144000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="172"></NameColumnWidth>
+      <ValueColumnWidth column_width="161"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wave_markers>
+      <marker time="77000" label="" />
+   </wave_markers>
+   <wvobject fp_name="pixel_reader_uno/bram_pixel" type="array">
+      <obj_property name="ElementShortName">pixel_reader_uno/bram_pixel[17:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_pixel[17:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_reader_uno/bram_wr_en" type="logic">
+      <obj_property name="ElementShortName">pixel_reader_uno/bram_wr_en</obj_property>
+      <obj_property name="ObjectShortName">bram_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_reader_uno/data_to_bram" type="array">
+      <obj_property name="ElementShortName">pixel_reader_uno/data_to_bram[23:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_bram[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_reader_uno/ddr_addr" type="array">
+      <obj_property name="ElementShortName">pixel_reader_uno/ddr_addr[25:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_addr[25:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_reader_uno/ddr_data" type="array">
+      <obj_property name="ElementShortName">pixel_reader_uno/ddr_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_data[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_reader_uno/pixel_number" type="array">
+      <obj_property name="ElementShortName">pixel_reader_uno/pixel_number[17:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_number[17:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_reader_uno/state" type="array">
+      <obj_property name="ElementShortName">pixel_reader_uno/state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>
