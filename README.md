@@ -65,8 +65,8 @@ The code provided as a DDR controller let us save up to 128 bits per address but
 
 | <a href="https://github.com/jdjotad" target="_blank">**Github**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | 
 | :---: |:---:|
-| [![Juan Escárate](https://github.com/github.png?size=40)](https://github.com/jdjotad)    | [![Carlos Fernández](https://github.com/github.png?size=40)](http://fvcproductions.com) |
-| <a href="https://github.com/jdjotad" target="_blank">`github.com/jdjotad`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
+| [![Juan Escárate](https://github.com/github.png?size=40)](https://github.com/jdjotad)    | [![Carlos Fernández](https://github.com/github.png?size=40)](https://github.com/Carlosfhz) |
+| <a href="https://github.com/Carlosfhz" target="_blank">`github.com/Carlosfhz`</a> | <a href="https://github.com/Carlosfhz" target="_blank">`github.com/Carlosfhz`</a> |
 
 - You can just grab their GitHub profile image URL
 - You should probably resize their picture using `?s=200` at the end of the image URL.
