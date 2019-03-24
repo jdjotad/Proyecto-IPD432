@@ -37,12 +37,12 @@ Because of the quantity of BRAM we can use the resolution we used to save a fram
 ## Usage of python script
 After installing the [Requirements](#requirements) packages you should call the next function in python IDLE 
 ```shell
->> FrameCapture(path_file, COM, size = DEFAULT_IMAGE_SIZE, frames_to_show = DEFAULT_FRAMES_TO_SHOW)
+>> FrameCapture(path_file, COM, size, frames_to_show)
 ```
 If you want to use terminal or command prompt
 ```shell
 $ python -i serial_video_loader.py
->> FrameCapture(path_file, COM, size = DEFAULT_IMAGE_SIZE, frames_to_show = DEFAULT_FRAMES_TO_SHOW)
+>> FrameCapture(path_file, COM, size, frames_to_show)
 ```
 
 |Input Name|Description|Examples|
