@@ -60,11 +60,7 @@ module Top_module
 	);
 	
 	logic  [23:0]  fifo_read;
-	logic  [127:0] rd_data_ordered;
-	logic          rd_data_valid;
-	logic  [23:0]  rd_addr_vga;
 	logic          fifo_read_en;
-	logic          busy_read;
 	logic          fifo_full, fifo_almost_full, fifo_empty, fifo_almost_empty;
 	logic  [9:0]   fifo_write_count, fifo_read_count;
 
@@ -99,7 +95,6 @@ module Top_module
         .reset,
         .rx_ready,
         .rx_data,
-        .fifo_write_count,
         .RGB,
         .pixel_ready
     );
@@ -111,25 +106,28 @@ assign LED[0]=end_of_write;
     
     
 /////////////////////////////////
-// Los modulos siguientes son solo para las tareas de display de los datos recibidos
-// No afecta la UART
-logic ddr_rd_en;  
-logic ddr_read_ready;  
-logic full_read_ready;
+// HERE STARTS THE DDR INTERFACE
+    logic          ddr_rd_en;  
+    logic          ddr_read_ready;  
+    logic          full_read_ready;
+	logic          busy_read;
+	logic          busy_write;
+    logic  [127:0] rd_data_ordered;
+	logic          rd_data_valid;
+	logic  [23:0]  rd_addr_vga;
 
     //--------------MEMORY HANDLER-----------------------------//
     // THIS MODULE IS THE INTERFACE TO WRITE AND READ FROM THE DDR, INSIDE HAS A MIG IP AND THE PYSICAL SIGNALS
     // ASK THE GIT REPOSITORY TO CONFIGURE THE MIG FOR NEXYS 4 DDR.
     Memory_handler memory_handler_inst(
-
         .rst(reset),
         .end_of_write,
-        .rx_ready,
         .fifo_read_en,
         .uart_rgb_information(fifo_read),
         .cpu_resetn,
         .clk_ref,
         .busy_read,
+        .busy_write,
         .ui_clk,
         //senales para la lectura del 
         .fifo_empty,
@@ -205,8 +203,8 @@ logic full_read_ready;
         .vc_visible
         );
     
-    // HERE ENTRIES THE PIXELS IN RGB (8[bits] EACH COLOUR) AND DEPENDING ON THE SWITCHES POSITION
-    // THE PICTURE CAN BE SHOWED AS THE ORIGINAL ONE, DITHERED, GRAYSCALED OR SWITCH BETWEEN THE COLOURS VALUES
+    // HERE ENTRY THE PIXELS IN RGB (8[bits] EACH COLOUR) AND DEPENDING ON THE SWITCHES POSITION
+    // THE VIDEO CAN BE SHOWED AS THE ORIGINAL ONE, DITHERED, GRAYSCALED OR SWITCH BETWEEN THE COLOURS VALUES
     RGB_display inst
         (
         .clk(CLK78_8MHZ),

@@ -61,7 +61,7 @@ module Pixel_reader #(
         endcase
     end
    
-   // Logic to show 1024x768 with a picture or video in 512x384, this happen repeating the same pixel 4 times.
+   // Logic to show 1024x768 with a picture or video in 512x384 native resolution, this happen repeating the same pixel 4 times.
     always_ff @(posedge clk_vga) begin
         counter_pixel_to_show <= counter_pixel_to_show;
         if ((hc_visible == 11'd1) && (vc_visible == 11'd1)) counter_pixel_to_show <= 18'd0;
@@ -74,7 +74,9 @@ module Pixel_reader #(
     end
    
    
-   
+   // There is the description of a state machine which first send the read enable to the DDR, then wait for read valid to be asserted.
+   // Each read valid means 5 pixels have arrived and they are saved in a BRAM to show a complete frame in the screen. The frame is hold
+   // 'cycles_to_reach_fps' [cycles] which is defined by the parameter 'fps'. 
    always_ff@(posedge clk) begin
       state <= state_next;
       ddr_addr <= ddr_addr_next;

@@ -1,6 +1,6 @@
-set_property SRC_FILE_INFO {cfile:/home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc rfile:../../../Modulos_en_uso/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc id:1 order:EARLY scoped_inst:memory_handler_inst/your_inst_name/u_mig_7series_0} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc rfile:../../../PROJECT_24_02_2019.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc id:1 order:EARLY scoped_inst:memory_handler_inst/ddr2/u_mig_7series_0} [current_design]
 set_property SRC_FILE_INFO {cfile:/home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/constraint/Nexys4DDR_Master92.xdc rfile:../../../Modulos_en_uso/constraint/Nexys4DDR_Master92.xdc id:2} [current_design]
-current_instance memory_handler_inst/your_inst_name/u_mig_7series_0
+current_instance memory_handler_inst/ddr2/u_mig_7series_0
 set_property src_info {type:SCOPED_XDC file:1 line:41 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R7 [get_ports {ddr2_dq[0]}]
 set_property src_info {type:SCOPED_XDC file:1 line:47 export:INPUT save:INPUT read:READ} [current_design]

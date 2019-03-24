@@ -76,7 +76,7 @@ set rc [catch {
   add_files -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.runs/synth_1/Top_module.dcp
   read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/clk_wiz_0/clk_wiz_0.xci
   read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/mig_7series_0/mig_7series_0.xci
+  read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
   read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/fifo_generator_0/fifo_generator_0.xci
   read_xdc /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/constraint/Nexys4DDR_Master92.xdc
   link_design -top Top_module -part xc7a100tcsg324-1

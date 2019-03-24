@@ -68,8 +68,8 @@ fifo_generator_0 your_instance_name (
   .empty(empty),                  // output wire empty
   .almost_empty(almost_empty),    // output wire almost_empty
   .valid(valid),                  // output wire valid
-  .rd_data_count(rd_data_count),  // output wire [8 : 0] rd_data_count
-  .wr_data_count(wr_data_count),  // output wire [8 : 0] wr_data_count
+  .rd_data_count(rd_data_count),  // output wire [5 : 0] rd_data_count
+  .wr_data_count(wr_data_count),  // output wire [5 : 0] wr_data_count
   .wr_rst_busy(wr_rst_busy),      // output wire wr_rst_busy
   .rd_rst_busy(rd_rst_busy)      // output wire rd_rst_busy
 );

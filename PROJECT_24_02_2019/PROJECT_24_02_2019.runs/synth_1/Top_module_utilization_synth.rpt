@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Fri Mar 22 16:59:42 2019
+| Date         : Sun Mar 24 11:46:39 2019
 | Host         : jotad running 64-bit Ubuntu 18.04.2 LTS
 | Command      : report_utilization -file Top_module_utilization_synth.rpt -pb Top_module_utilization_synth.pb
 | Design       : Top_module
@@ -155,12 +155,12 @@ Table of Contents
 |         Ref Name         | Used | Functional Category |
 +--------------------------+------+---------------------+
 | FDRE                     | 3927 |        Flop & Latch |
-| LUT6                     | 1074 |                 LUT |
-| LUT4                     |  978 |                 LUT |
-| LUT3                     |  873 |                 LUT |
-| LUT5                     |  869 |                 LUT |
+| LUT6                     | 1069 |                 LUT |
+| LUT4                     |  981 |                 LUT |
+| LUT5                     |  875 |                 LUT |
+| LUT3                     |  874 |                 LUT |
 | RAMD32                   |  624 |  Distributed Memory |
-| LUT2                     |  504 |                 LUT |
+| LUT2                     |  503 |                 LUT |
 | LUT1                     |  358 |                 LUT |
 | RAMS32                   |  208 |  Distributed Memory |
 | CARRY4                   |  151 |          CarryLogic |

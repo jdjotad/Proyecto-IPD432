@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553284696">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553438708">
   <File Type="VDS-TIMING-PB" Name="Top_module_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="Top_module_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="Top_module.dcp"/>
@@ -25,7 +25,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/Modulos_en_uso/ip/mig_7series_0/mig_7series_0.xci">
+    <File Path="$PSRCDIR/sources_1/ip/mig_7series_0/mig_7series_0.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -137,6 +137,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/Modulos en uso/ip/mig_7series_0/mig_7series_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/Modulos_en_uso/ip/clk_wiz_0.xcix">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -146,14 +154,6 @@
     </File>
     <File Path="$PPRDIR/Modulos_en_uso/ip/blk_mem_gen_0.xcix">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/Modulos en uso/ip/mig_7series_0/mig_7series_0.xci">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -201,7 +201,7 @@
         <Attr Name="ScopedToCell" Val="mig_7series_0"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/Modulos_en_uso/ip/mig_7series_0/mig_a.prj">
+    <File Path="$PSRCDIR/sources_1/ip/mig_7series_0/mig_a.prj">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="ScopedToCell" Val="mig_7series_0"/>

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Fri Mar 22 17:01:59 2019
+| Date             : Sun Mar 24 11:49:29 2019
 | Host             : jotad running 64-bit Ubuntu 18.04.2 LTS
 | Command          : report_power -file Top_module_power_routed.rpt -pb Top_module_power_summary_routed.pb -rpx Top_module_power_routed.rpx
 | Design           : Top_module
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.089        |
+| Total On-Chip Power (W)  | 1.087        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.975        |
+| Dynamic (W)              | 0.973        |
 | Device Static (W)        | 0.114        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 80.0         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.023 |       25 |       --- |             --- |
-| Slice Logic              |     0.004 |    11023 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     4168 |     63400 |            6.57 |
-|   Register               |    <0.001 |     4144 |    126800 |            3.27 |
+| Clocks                   |     0.021 |       25 |       --- |             --- |
+| Slice Logic              |     0.004 |    11009 |       --- |             --- |
+|   LUT as Logic           |     0.004 |     4164 |     63400 |            6.57 |
+|   Register               |    <0.001 |     4126 |    126800 |            3.25 |
 |   CARRY4                 |    <0.001 |      161 |     15850 |            1.02 |
-|   F7/F8 Muxes            |    <0.001 |      169 |     63400 |            0.27 |
 |   LUT as Distributed RAM |    <0.001 |      416 |     19000 |            2.19 |
+|   F7/F8 Muxes            |    <0.001 |      169 |     63400 |            0.27 |
 |   LUT as Shift Register  |    <0.001 |       19 |     19000 |            0.10 |
 |   Others                 |     0.000 |      632 |       --- |             --- |
-| Signals                  |     0.009 |     9214 |       --- |             --- |
+| Signals                  |     0.009 |     9183 |       --- |             --- |
 | Block RAM                |     0.016 |    132.5 |       135 |           98.15 |
 | MMCM                     |     0.240 |        2 |         6 |           33.33 |
 | PLL                      |     0.089 |        1 |         6 |           16.67 |
-| I/O                      |     0.521 |       88 |       210 |           41.90 |
+| I/O                      |     0.520 |       88 |       210 |           41.90 |
 | PHASER                   |     0.070 |       14 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.114 |          |           |                 |
-| Total                    |     1.089 |          |           |                 |
+| Total                    |     1.087 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.095 |       0.073 |      0.021 |
+| Vccint    |       1.000 |     0.093 |       0.072 |      0.021 |
 | Vccaux    |       1.800 |     0.278 |       0.260 |      0.018 |
 | Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -132,33 +132,33 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
-| Clock                                                                                                                                                     | Domain                                                                                                                                                                                                                                    | Constraint (ns) |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
-| clk_out1_clk_wiz_0                                                                                                                                        | wiz_0/inst/clk_out1_clk_wiz_0                                                                                                                                                                                                             |             5.0 |
-| clk_out2_clk_wiz_0                                                                                                                                        | wiz_0/inst/clk_out2_clk_wiz_0                                                                                                                                                                                                             |            12.7 |
-| clk_pll_i                                                                                                                                                 | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/clk_pll_i                                                                                                                                    |            20.0 |
-| clkfbout_clk_wiz_0                                                                                                                                        | wiz_0/inst/clkfbout_clk_wiz_0                                                                                                                                                                                                             |            10.0 |
-| freq_refclk                                                                                                                                               | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/freq_refclk                                                                                                                                  |             2.5 |
-| iserdes_clkdiv                                                                                                                                            | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv       |            20.0 |
-| iserdes_clkdiv_1                                                                                                                                          | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv       |            20.0 |
-| mem_refclk                                                                                                                                                | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/mem_refclk                                                                                                                                   |             5.0 |
-| oserdes_clk                                                                                                                                               | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             5.0 |
-| oserdes_clk_1                                                                                                                                             | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             5.0 |
-| oserdes_clk_2                                                                                                                                             | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             5.0 |
-| oserdes_clk_3                                                                                                                                             | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             5.0 |
-| oserdes_clkdiv                                                                                                                                            | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv       |            10.0 |
-| oserdes_clkdiv_1                                                                                                                                          | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |            20.0 |
-| oserdes_clkdiv_2                                                                                                                                          | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |            10.0 |
-| oserdes_clkdiv_3                                                                                                                                          | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |            20.0 |
-| pll_clk3_out                                                                                                                                              | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/pll_clk3_out                                                                                                                                 |            20.0 |
-| pll_clkfbout                                                                                                                                              | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/pll_clkfbout                                                                                                                                 |            10.0 |
-| sync_pulse                                                                                                                                                | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/sync_pulse                                                                                                                                   |            80.0 |
-| sys_clk_pin                                                                                                                                               | clk                                                                                                                                                                                                                                       |            10.0 |
-| sys_clk_pin                                                                                                                                               | clk_IBUF_BUFG                                                                                                                                                                                                                             |            10.0 |
-| u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/A_rst_primitives_reg |             5.0 |
-| u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk | memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/A_rst_primitives_reg |             5.0 |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                                                     | Domain                                                                                                                                                                                                                          | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_out1_clk_wiz_0                                                                                                                                        | wiz_0/inst/clk_out1_clk_wiz_0                                                                                                                                                                                                   |             5.0 |
+| clk_out2_clk_wiz_0                                                                                                                                        | wiz_0/inst/clk_out2_clk_wiz_0                                                                                                                                                                                                   |            12.7 |
+| clk_pll_i                                                                                                                                                 | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/clk_pll_i                                                                                                                                    |            20.0 |
+| clkfbout_clk_wiz_0                                                                                                                                        | wiz_0/inst/clkfbout_clk_wiz_0                                                                                                                                                                                                   |            10.0 |
+| freq_refclk                                                                                                                                               | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/freq_refclk                                                                                                                                  |             2.5 |
+| iserdes_clkdiv                                                                                                                                            | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv       |            20.0 |
+| iserdes_clkdiv_1                                                                                                                                          | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv       |            20.0 |
+| mem_refclk                                                                                                                                                | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/mem_refclk                                                                                                                                   |             5.0 |
+| oserdes_clk                                                                                                                                               | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             5.0 |
+| oserdes_clk_1                                                                                                                                             | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             5.0 |
+| oserdes_clk_2                                                                                                                                             | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             5.0 |
+| oserdes_clk_3                                                                                                                                             | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             5.0 |
+| oserdes_clkdiv                                                                                                                                            | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv       |            10.0 |
+| oserdes_clkdiv_1                                                                                                                                          | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |            20.0 |
+| oserdes_clkdiv_2                                                                                                                                          | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |            10.0 |
+| oserdes_clkdiv_3                                                                                                                                          | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |            20.0 |
+| pll_clk3_out                                                                                                                                              | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/pll_clk3_out                                                                                                                                 |            20.0 |
+| pll_clkfbout                                                                                                                                              | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/pll_clkfbout                                                                                                                                 |            10.0 |
+| sync_pulse                                                                                                                                                | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/sync_pulse                                                                                                                                   |            80.0 |
+| sys_clk_pin                                                                                                                                               | clk                                                                                                                                                                                                                             |            10.0 |
+| sys_clk_pin                                                                                                                                               | clk_IBUF_BUFG                                                                                                                                                                                                                   |            10.0 |
+| u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/A_rst_primitives_reg |             5.0 |
+| u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk | memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/A_rst_primitives_reg |             5.0 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -170,18 +170,18 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| Top_module            |     0.975 |
-|   memory_handler_inst |     0.807 |
-|     your_inst_name    |     0.806 |
-|       u_mig_7series_0 |     0.805 |
-|   pixel_reader_uno    |     0.025 |
+| Top_module            |     0.973 |
+|   memory_handler_inst |     0.806 |
+|     ddr2              |     0.805 |
+|       u_mig_7series_0 |     0.804 |
+|   pixel_reader_uno    |     0.024 |
 |     blk_frame         |     0.021 |
 |       U0              |     0.021 |
 |   wiz_0               |     0.126 |
 |     inst              |     0.126 |
-|   your_instance_name  |     0.002 |
-|     U0                |     0.002 |
-|       inst_fifo_gen   |     0.002 |
+|   your_instance_name  |     0.001 |
+|     U0                |     0.001 |
+|       inst_fifo_gen   |     0.001 |
 +-----------------------+-----------+
 
 

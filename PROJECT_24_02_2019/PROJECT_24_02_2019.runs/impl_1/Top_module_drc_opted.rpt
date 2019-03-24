@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Fri Mar 22 17:00:25 2019
+| Date         : Sun Mar 24 11:47:22 2019
 | Host         : jotad running 64-bit Ubuntu 18.04.2 LTS
 | Command      : report_drc -file Top_module_drc_opted.rpt -pb Top_module_drc_opted.pb -rpx Top_module_drc_opted.rpx
 | Design       : Top_module
@@ -35,7 +35,7 @@ Table of Contents
 -----------------
 REQP-1709#1 Warning
 Clock output buffering  
-PLLE2_ADV connectivity violation. The signal memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/pll_clk3_out on the memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/plle2_i/CLKOUT3 pin of memory_handler_inst/your_inst_name/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+PLLE2_ADV connectivity violation. The signal memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/pll_clk3_out on the memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/plle2_i/CLKOUT3 pin of memory_handler_inst/ddr2/u_mig_7series_0/u_mig_7series_0_mig/u_ddr2_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
 Related violations: <none>
 
 

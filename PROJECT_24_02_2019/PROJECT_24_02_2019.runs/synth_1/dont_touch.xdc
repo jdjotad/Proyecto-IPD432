@@ -9,13 +9,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==clk_wiz_0 || OR
 # IP: /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_0 || ORIG_REF_NAME==blk_mem_gen_0} -quiet] -quiet
 
-# IP: /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/mig_7series_0/mig_7series_0.xci
+# IP: ip/mig_7series_0/mig_7series_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mig_7series_0 || ORIG_REF_NAME==mig_7series_0} -quiet] -quiet
 
 # IP: /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/fifo_generator_0/fifo_generator_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] -quiet
 
-# XDC: /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc
+# XDC: ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc
 
-# XDC: /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc
+# XDC: ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mig_7series_0 || ORIG_REF_NAME==mig_7series_0} -quiet] -quiet

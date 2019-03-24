@@ -56,9 +56,9 @@ set_property used_in_implementation false [get_files -all /home/jotad/Desktop/Ca
 read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
-read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/mig_7series_0/mig_7series_0.xci
-set_property used_in_implementation false [get_files -all /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
+read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
+set_property used_in_implementation false [get_files -all /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/PROJECT_24_02_2019.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
 
 read_ip -quiet /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/fifo_generator_0/fifo_generator_0.xci
 set_property used_in_implementation false [get_files -all /home/jotad/Desktop/Caco_funcionando_no_tocar/PROJECT_24_02_2019/Modulos_en_uso/ip/fifo_generator_0/fifo_generator_0.xdc]
