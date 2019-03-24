@@ -11,18 +11,20 @@ This project was made to test a Nexys 4 DDR so you will need Vivado from Xilinx.
 - ![Pyserial](https://github.com/pyserial/pyserial)
 - ![Numpy](https://pypi.org/project/numpy/#description)
 
-### IP SETUPS
+## IP SETUPS
 
 **MIG**
 
-![Recordit GIF](https://github.com/jdjotad/Proyecto-IPD432/blob/master/video_mig.gif)
+![MIG CONFIGURATION](https://media.giphy.com/media/6bdgAV09dlkrvjyTYF/source.gif)
 
 **CLOCK WIZARD**
+![CLOCK WIZARD CONFIGURATION](https://media.giphy.com/media/1k4UyXgV2xXdIqIiOH/source.gif)
 
 **FIFO**
+![FIFO CONFIGURATION](https://media.giphy.com/media/d2rx2izw91WvNhxTL1/source.gif)
 
 **BRAM**
-
+![BRAM CONFIGURATION](https://media.giphy.com/media/dYiUno2wfqnDN2onu9/source.gif)
 
 ## Features
 We approached this repo ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) with a high performance DDR controller to save a piece of video in the DDR2 SRAM of the Nexys 4 DDR and show a it in a screen with VGA port. The fpga show a resolution of 1024x768 pixels by our especifications, at a 78.8[MHz] clock. 
