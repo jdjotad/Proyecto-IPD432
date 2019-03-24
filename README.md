@@ -55,7 +55,7 @@ The code provided as a DDR controller let us save up to 128 bits per address but
 | <a href="https://github.com/jdjotad" target="_blank">**Juan Escarate's repo**</a> | <a href="https://github.com/Carlosfhz" target="_blank">**Carlos Fernandez's repo**</a> | 
 | :---: |:---:|
 | [![Juan Escárate](https://github.com/github.png?size=40)](https://github.com/jdjotad)    | [![Carlos Fernández](https://github.com/github.png?size=40)](https://github.com/Carlosfhz) |
-| <a href="https://github.com/Carlosfhz" target="_blank">`github.com/Carlosfhz`</a> | <a href="https://github.com/Carlosfhz" target="_blank">`github.com/Carlosfhz`</a> |
+| <a href="https://github.com/jdjotad" target="_blank">`github.com/jdjotad`</a> | <a href="https://github.com/Carlosfhz" target="_blank">`github.com/Carlosfhz`</a> |
 
 
 ---
