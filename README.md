@@ -17,10 +17,16 @@ This project was made to test a Nexys 4 DDR so you will need Vivado from Xilinx.
 
 ![Recordit GIF](https://github.com/jdjotad/Proyecto-IPD432/blob/master/video_mig.gif)
 
+**CLOCK WIZARD**
+
+**FIFO**
+
+**BRAM**
+
 
 ## Features
-We approached this code ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) to save a piece of video in the DDR2 SRAM of the Nexys 4 DDR and show a it in a screen with VGA port. The fpga is capable to show a resolution of 1024x768 pixels, by our especifications at a 78.8[MHz] clock. 
-The code provided as a DDR controller let us save up to 128 bits per address but we send the pixels in RGB and 8 bits per colour so we saved 5 pixels by address, equivalent to 120 of 128 bits losing 8 bits per address.
+We approached this code ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) to save a piece of video in the DDR2 SRAM of the Nexys 4 DDR and show a it in a screen with VGA port. The fpga show a resolution of 1024x768 pixels by our especifications, at a 78.8[MHz] clock. 
+The code provided as a DDR controller let us save up to 128 bits per address but we send the pixels in RGB and 8 bits per colour so we saved 5 pixels by address, equivalent to 120 of 128 bits, losing 8 bits per address.
 ## Usage
 
 ## Future features
@@ -50,7 +56,6 @@ The code provided as a DDR controller let us save up to 128 bits per address but
 
 ## Team
 
-> Or Contributors/People
 
 | <a href="https://github.com/jdjotad" target="_blank">**Juan Escarate's repo**</a> | <a href="https://github.com/Carlosfhz" target="_blank">**Carlos Fernandez's repo**</a> | 
 | :---: |:---:|
