@@ -32,7 +32,7 @@ A ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) is t
 
 The UART was configurated with an input clock of 100[MHz] and a baud rate of 4M of baud rate (If there is a change for this parameter in the code its equivalent in the python script also have to be change)
 
-The ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) allow to save 128 bits per address, because the pixels stored are 24 bits lenght, this means only 5 can be saved completely in every address, only 120 bits are used.
+The ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) allow to save 128 bits per address, because the pixels stored are 24 bits lenght (this means just 5 pixels can be saved completely in every address) only 120 bits are used.
 
 Because of the number of BRAM available the FPGA store a frame with a resolution of 512x384. To reach a resolution of 1024x768 every pixel is shown 4 times.
 
