@@ -1,12 +1,12 @@
 # Video filters in Nexys 4 DDR
-This project is a Systemverilog version of a video processor implemented in a Nexys 4 DDR which contains 4 simple filters like dithering, colour scramble, grayscale and the original view. 
+This project is a Systemverilog version of a video processor implemented in a Nexys 4 DDR, includes 4 filters dithering, colour scramble, grayscale and the original view. 
 
 
 [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/jdjotad/Proyecto-IPD432/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/jdjotad/Proyecto-IPD432/pulls)
 
 
 ## Requirements
-This project was made to test a Nexys 4 DDR so you will need Vivado from Xilinx. We provide a python code to send through serial port a video up to 200 frames (limited by the script) and to run that python script you will need the next packages:
+This project was made to test a Nexys 4 DDR so you will need Vivado from Xilinx. The Repository contains a python code to send through serial port a video up to 200 frames (limited by the script) and to run that python script you will need the next packages:
 - ![Opencv](https://pypi.org/project/opencv-python/)
 - ![Pyserial](https://github.com/pyserial/pyserial)
 - ![Numpy](https://pypi.org/project/numpy/#description)
@@ -27,13 +27,14 @@ This project was made to test a Nexys 4 DDR so you will need Vivado from Xilinx.
 ![BRAM CONFIGURATION](https://media.giphy.com/media/dYiUno2wfqnDN2onu9/source.gif)
 
 ## Features
-We approached this repo ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) with a high performance DDR controller to save a piece of video in the DDR2 SRAM of the Nexys 4 DDR and show a it in a screen with VGA port. The fpga show a resolution of 1024x768 pixels by our especifications, at a 78.8[MHz] clock. 
 
-The uart was configurated with an input clock of 100[MHz] and a baud rate of 4M of baud rate (if you change this in the code remember to change it in the python script).
+A ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) is taken as a basis for the task of saving a piece of video in the DDR2 SRAM of the Nexys 4 DDR and show it in a screen through VGA port. The image is shown at a resolution of 1024x768 pixels using a 78.8[MHz] clock.  
 
-The code provided as a DDR controller let us save up to 128 bits per address but we send the pixels in RGB and 8 bits per colour so we saved 5 pixels by address, equivalent to 120 of 128 bits, losing 8 bits per address. To be sure of the address of reading we didn't approach the throughput gave by the DDR controller because just when the data from the DDR is valid we enable the reading of the DDR.
+The UART was configurated with an input clock of 100[MHz] and a baud rate of 4M of baud rate (If there is a change for this parameter in the code its equivalent in the python script also have to be change)
 
-Because of the quantity of BRAM we can use the resolution we used to save a frame is 512x384, to keep the aspect ratio and is easier to reach a 1024x768 frame. To show a 1024x768 frame, each pixel should be shown 4 times or equally in a 2x2 square.
+The ![DDR RAM Controller](https://github.com/alonsorb/ddr-ram-controller-mig) allow to save 128 bits per address, because the pixels stored are 24 bits lenght, this means only 5 can be saved completely in every address, only 120 bits are used.
+
+Because of the number of BRAM available the FPGA store a frame with a resolution of 512x384. To reach a resolution of 1024x768 every pixel is shown 4 times.
 
 
 ## Usage of python script
