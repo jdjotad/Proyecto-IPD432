@@ -100,6 +100,13 @@ $ python -i serial_video_loader.py
 | <a href="https://github.com/jdjotad" target="_blank">`github.com/jdjotad`</a> | <a href="https://github.com/Carlosfhz" target="_blank">`github.com/Carlosfhz`</a> |
 
 
+## Collaborators
+
+
+- Alonso Rodriguez - alonso.rodriguez.13@sansano.usm.cl
+- Rodrigo Venegas - rodrigo.venegas.13@sansano.usm.cl
+
+
 ---
 
 ## FAQ
