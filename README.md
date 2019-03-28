@@ -2,7 +2,8 @@
 This project is a Systemverilog version of a video processor implemented in a Nexys 4 DDR, includes 4 filters dithering, colour scramble, grayscale and the original view. 
 
 
-[![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/jdjotad/Proyecto-IPD432/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/jdjotad/Proyecto-IPD432/pulls)
+[![Github Issues](https://img.shields.io/github/issues/Manu343726/siplasplas.svg?maxAge=2592000)](https://github.com/jdjotad/Proyecto-IPD432/issues) 
+[![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/jdjotad/Proyecto-IPD432/pulls)
 
 
 ## Requirements
