@@ -22,13 +22,13 @@
 
 module Pixel_reader #(
     parameter DDR_DATA_WIDTH = 128,
-    parameter NUMBER_OF_PIXELS = 196608,
-    parameter fps = 24
+    parameter NUMBER_OF_PIXELS = 196608
     )(
      input logic 		      	          clk,
      input logic 		      	          clk_vga,
      input logic 		      	          reset,
      input logic    [10:0]                hc_visible, vc_visible,
+     input logic                          fps,
      input logic 		      	          ddr_rd_data_valid,
      input logic 		      	          ddr_rd_busy, 
      input logic    [DDR_DATA_WIDTH-1:0]  ddr_data,
@@ -52,13 +52,15 @@ module Pixel_reader #(
    
     // A frame should be in the display for 1/fps [s] or (MHZ of clk)/fps [clock cycles] to see the input fps.
     // To calculate the (MHZ of clk)/fps [clock cycles] we will use this ip
-    always_comb begin
-        case(fps)
-            24: cycles_to_reach_fps = 31'd2_084_000;
-            30: cycles_to_reach_fps = 31'd1_666_667;
-            60: cycles_to_reach_fps = 31'd1_042_000;
-            default: cycles_to_reach_fps = 31'd2_084_000;
-        endcase
+    always_ff@(posedge clk) begin
+        cycles_to_reach_fps <= cycles_to_reach_fps;
+        if(state != HOLD_FRAME) begin
+            case(fps)
+                1'b0: cycles_to_reach_fps <= 31'd2_084_000;
+                1'b1: cycles_to_reach_fps <= 31'd1_042_000;
+                default: cycles_to_reach_fps <= 31'd2_084_000;
+            endcase
+        end
     end
    
    // Logic to show 1024x768 with a picture or video in 512x384 native resolution, this happen repeating the same pixel 4 times.

@@ -163,6 +163,7 @@ assign LED[0]=end_of_write;
              .clk_vga(CLK78_8MHZ),
              .hc_visible,
              .vc_visible,
+             .fps(SW[2]),
              .reset(reset),
              .ddr_rd_data_valid(ddr_read_ready),
              .ddr_rd_busy(busy_read), 
